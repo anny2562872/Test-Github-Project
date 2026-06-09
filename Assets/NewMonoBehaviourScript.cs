@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem; 
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
@@ -10,5 +11,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+	    if (Keyboard.current.spaceKey.IsPressed()) {
+		    print("Space is being held");
+
+	    }
     }
 }
